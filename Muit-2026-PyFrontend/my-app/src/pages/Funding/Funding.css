@@ -1,0 +1,89 @@
+/* Переменные подхватятся из Competitions.css или App.css, если они в :root */
+
+.funding-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.funding-header h1 {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-shadow: 0 0 15px var(--accent-mute);
+  margin: 0;
+}
+
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.funding-card {
+  background: var(--bg-card); /* Твой #495d71 */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(142, 140, 140, 0.3);
+}
+
+.funding-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-mute);
+}
+
+.funding-title {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-weight: 800;
+}
+
+.funding-desc {
+  color: #e0e0e0; /* Светлый текст для читаемости на синем фоне */
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+/* Прогресс-бар */
+.progress-container {
+  background: var(--bg-input); /* Твой #6c7784 */
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: var(--accent);
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--accent);
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.funding-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.amount-target {
+  color: var(--accent);
+}

@@ -1,0 +1,158 @@
+# =========================================
+# Global / OS
+# =========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================
+# IDE / Editor
+# =========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =========================================
+# Logs
+# =========================================
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================
+# Environment files / secrets
+# (keep examples in repo)
+# =========================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# If you use direnv
+.envrc
+
+# =========================================
+# Python (FastAPI + Telegram bot)
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging / build
+build/
+dist/
+site/
+.eggs/
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+# Test / coverage / tooling caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.dmypy.json
+coverage.xml
+
+# Jupyter (if used)
+.ipynb_checkpoints/
+
+# Type checker / linters
+.cache/
+
+# =========================================
+# FastAPI / SQLAlchemy local artifacts
+# =========================================
+# Local SQLite DBs (if used for dev/tests)
+*.sqlite
+*.sqlite3
+*.db
+
+# Uvicorn/Gunicorn runtime files (if any)
+*.pid
+*.sock
+
+# Temporary uploads / local media (optional)
+media/
+uploads/
+tmp/
+temp/
+
+# IMPORTANT:
+# Alembic migrations usually MUST be committed.
+# Do NOT ignore migrations/versions/ unless you have a special workflow.
+
+# =========================================
+# Telegram bot (Python) local runtime files
+# =========================================
+# Session files (Telethon / Pyrogram etc.)
+*.session
+*.session-journal
+
+# If bot saves local downloads/files
+downloads/
+sessions/
+
+# =========================================
+# Node.js / React / Vite (frontend)
+# =========================================
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Vite cache / generated files
+.vite/
+vite.svg
+
+# TypeScript cache / build info
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# =========================================
+# Monorepo / package manager extras (optional)
+# =========================================
+# Turbo / Nx / pnpm / yarn cache directories if used
+.turbo/
+.nx/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# =========================================
+# Docker / Compose local overrides (optional)
+# =========================================
+# Keep compose files in repo, ignore only local overrides/secrets if any
+docker-compose.override.yml
+*.local.yml
+
+# =========================================
+# Misc
+# =========================================
+*.bak
+*.tmp
